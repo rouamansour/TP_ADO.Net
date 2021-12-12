@@ -74,6 +74,7 @@ namespace TP4
 
         private void Modifier_click(object sender, EventArgs e)
         {
+            //string req = "update Client set Nom_Cl=@Nom,Pren_Cl=@Pren, Ville_Cl=@Ville, Tel_Cl=@Tel where CIN_Cl =@Cin";
             Client C = new Client
             {
                 CIN_Cl = Int64.Parse(Txt_CIN.Text),
@@ -105,10 +106,11 @@ namespace TP4
                 MetroFramework.MetroMessageBox.Show(this, "Client inexistant");
             else
             {
+                MetroFramework.MetroMessageBox.Show(this, "Client existant");
                 Txt_Nom.Text = dtc.Rows[0][1].ToString();
                 Txt_Prenom.Text = dtc.Rows[0][2].ToString();
                 Txt_Ville.Text = dtc.Rows[0][3].ToString();
-                Txt_Tel.Text = dtc.Rows[0][1].ToString();
+                Txt_Tel.Text = dtc.Rows[0][4].ToString();
             }
         }
 
