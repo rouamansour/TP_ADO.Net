@@ -16,6 +16,7 @@ namespace TP4
         public FListe_Cl()
         {
             InitializeComponent();
+            Dg_Client.DataSource = ClientAdo.Liste_Client();
         }
 
         private void Dg_Client_DoubleClick(object sender, EventArgs e)
@@ -68,7 +69,7 @@ namespace TP4
 
         private void Mdifier_click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Modifier_click(object sender, EventArgs e)
@@ -116,5 +117,5 @@ namespace TP4
 
         }
     }
-    
+
 }
