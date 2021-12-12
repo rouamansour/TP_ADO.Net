@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
+﻿using Metier1;
+using System;
 using System.Data;
-using Metier1;
+using System.Data.SqlClient;
 namespace DAO
 {
-   public  class ClientAdo
+    public  class ClientAdo
     {
         public void Inserer(Client C)
         {
